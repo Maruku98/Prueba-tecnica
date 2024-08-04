@@ -1,0 +1,15 @@
+No he incluido la carpeta node_modules para que la prueba pese menos, así que hay que utilizar npm install antes de testear.
+A continuación detallo algunas decisiones que he tomado durante el desarrollo de la prueba:
+
+REQUISITOS DE LA PRUEBA
+- En la prueba se especificaba que debía utilizarse TypeScript y no vanilla JS. Sin embargo, he utilizado JS porque hasta el momento no he podido trabajar ni tengo formación en TypeScript (y todo lo que sé de React lo implemento con JS). Por supuesto, siempre estoy abierto a aprender TypeScript si el proyecto lo requiere.
+- También se especificaba que debían usarse Class components y no Function components. En principio, estoy familiarizado con ambos métodos, pero a nivel de experiencia todo lo que he hecho ha sido con Function components, así que no me siento del todo cómodo usando Class components todavía. He utilizado Function components también por el plazo ajustado.
+
+API:
+- En la prueba no se especificaba cuántas series debían aparecer en la landing principal. Una sola llamada a la API devuelve siempre 20 elementos como máximo. Estuve leyendo la documentación de la API y en principio no vi ninguna forma de escoger cuántos elementos se quieren recibir, o de pedirlas todas en una misma llamada.
+- Sin embargo, hay demasiadas series como para ponerlas todas en una misma página. Así que para no limitarme a una landing con solo 20 elementos, he añadido una paginación extra limitada a 9 páginas (este número se puede cambiar desde el propio componente). Me hubiera gustado hacer una paginación dinámica cuyos nombres se escondieran y actualizaran, pero no me dio tiempo.
+- La llamada a la API de la landing principal y la de las fichas internas son prácticamente iguales. Soy consciente de la (fea) repetición de código y me hubiera gustado poder externalizar la función.
+
+CSS:
+- He procurado, en la medida de lo posible, que la página sea responsive desde los 400px hasta los 1920px aproximadamente (resolución máxima de mi monitor).
+- Soy consciente de que hay un poco de pupurri en las medidas (rem, px, vw...). Yo trabajo siempre con medidas relativas, pero en este caso atajé con un poco con medidas absolutas por falta de tiempo.

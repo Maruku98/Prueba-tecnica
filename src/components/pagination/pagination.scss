@@ -1,0 +1,33 @@
+// ESTILOS DEL MENÚ DE NAVEGACIÓN 
+@import "../../variables.scss";
+
+nav.pagination {
+    margin: 3rem 0;
+    text-align: center;
+    font-family: RobotoRegular;
+    font-size: 1.3rem;
+    color: $yellow;
+
+    span {
+        margin-inline: 1rem;
+    }
+
+    button.number {
+        padding: 0.5rem 1rem;
+        border: 1px solid transparent;
+        border-radius: $radius;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: transparent;
+        cursor: pointer;
+
+        &.active {
+            background-color: $red;
+        }
+
+        &:hover {
+            border: 1px solid $red;
+        }
+    }
+}

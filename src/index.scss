@@ -1,0 +1,28 @@
+// ESTILOS GLOBALES
+@import "./variables.scss";
+
+*, *::before , *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 15px;
+
+  body {
+    font-family: RobotoBold, "Franklin Gothic Medium", sans-serif;
+    background-color: $black;
+
+    div#root {
+      display: grid;
+      grid-template-rows: auto 1fr auto; // Empuja el footer hacia abajo
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+}

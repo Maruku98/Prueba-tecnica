@@ -1,0 +1,17 @@
+// ESTILOS DEL CONTENEDOR DE LAS CARTAS
+@import "../../variables.scss";
+
+div.cardContainer {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    min-width: 400px;
+    width: 85%;
+    padding-left: 7.5rem;
+    margin: 2rem 0;
+
+    @media (max-width: 675px) {
+        justify-content: center;
+        padding-left: 0;
+    }
+}

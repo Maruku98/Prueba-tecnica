@@ -1,0 +1,41 @@
+/* ESTILOS DE LAS CARTAS */
+@import "../../variables.scss";
+
+div.card {
+    display: inline-block;
+    width: clamp(15rem, 20vw, 300px);
+    padding: 1.5rem;
+    transition: transform 0.1s ease-out;
+
+    &:hover {
+        background-color: black;
+        transform: scale(0.95);
+    }
+
+    img.card-img {
+        height: clamp(280px, 25vw, 400px);
+        width: 100%;
+        margin-bottom: 1rem;
+        border-radius: $radius;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    h2, p {
+        padding: 0 0.3rem;
+    }
+
+    h2 {
+        margin-bottom: 0.4rem;
+        font-size: 1.2rem;
+        color: $red;
+        cursor: pointer;
+    }
+
+    p {
+        font-size: 0.8rem;
+        font-family: RobotoRegular;
+        color: $yellow;
+        cursor: pointer;
+    }
+}

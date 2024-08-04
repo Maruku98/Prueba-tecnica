@@ -1,0 +1,16 @@
+// VARIABLES GLOBALES
+$red: hsl(7, 78%, 55%);
+$black: hsl(0, 0%, 15%);
+$yellow: #FBE9D0;
+$titleSize: clamp(1.1rem, 1vw, 2rem);
+$radius: 8px;
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url(./components/font/Roboto-Regular.ttf);
+}
+  
+@font-face {
+    font-family: RobotoBold;
+    src: url(./components/font/Roboto-Bold.ttf);
+}

@@ -1,0 +1,40 @@
+// ESTILOS DEL FOOTER
+@import "../../variables.scss";
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  padding: 3rem;
+  color: $yellow;
+  background-color: $red;
+
+  div.footer-Column {
+    h3 {
+      margin-block: 0.8rem;
+      font-size: $titleSize;
+      color: $yellow;
+    }
+
+    li {
+      min-width: 10rem;
+      padding: 0.5rem 0;
+      font-family: RobotoRegular;
+      list-style-type: none;
+      cursor: pointer;
+      transition: transform 0.1s linear;
+
+      &:hover {
+        font-family: RobotoBold;
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  @media(max-width: 760px) {
+    padding: 2rem;
+    gap: 2rem;
+  }
+}
